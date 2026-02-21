@@ -1013,7 +1013,7 @@
             </ul>
           </div>
           <div class="work-card-footer">
-            <a href="https://udify.app/chat/H8hLOtHQlnaS6FsS" target="_blank" class="work-demo">Demo <span class="work-demo-arrow">→</span></a>
+            <a href="#" class="work-demo">Demo <span class="work-demo-arrow">→</span></a>
             <span class="work-status">● Live</span>
           </div>
         </div>
@@ -1035,7 +1035,7 @@
             </ul>
           </div>
           <div class="work-card-footer">
-            <a href="https://yutaro13m.github.io/ichiki-website/"  target="_blank" class="work-demo">Demo <span class="work-demo-arrow">→</span></a>
+            <a href="https://yutaro13m.github.io/ichiki-website/" target="_blank" class="work-demo">Demo <span class="work-demo-arrow">→</span></a>
             <span class="work-status">● Live</span>
           </div>
         </div>
@@ -1057,7 +1057,7 @@
             </ul>
           </div>
           <div class="work-card-footer">
-            <a href="https://udify.app/chat/FzjsX8ZHyaKft8Nh" target="_blank" class="work-demo">Demo <span class="work-demo-arrow">→</span></a>
+            <a href="#" class="work-demo">Demo <span class="work-demo-arrow">→</span></a>
             <span class="work-status">● Live</span>
           </div>
         </div>
@@ -1141,11 +1141,11 @@
             チャットボット導入のご相談・お見積もりは無料です。どんな小さなご質問でもお気軽にどうぞ。通常2営業日以内にご返信します。
           </p>
           <div class="contact-methods reveal reveal-d3">
-            <a href="/cdn-cgi/l/email-protection#4b32243e390b2e262a222765282426" class="contact-method">
+            <a href="mailto:your@email.com" class="contact-method">
               <div class="contact-method-icon">@</div>
               <div class="contact-method-info">
                 <div class="contact-method-label">Email</div>
-                <div class="contact-method-val"><span class="__cf_email__" data-cfemail="b6cfd9c3c4f6d3dbd7dfda98d5d9db">[email&#160;protected]</span></div>
+                <div class="contact-method-val">your@email.com</div>
               </div>
             </a>
             <a href="https://twitter.com/yourhandle" target="_blank" class="contact-method">
@@ -1202,7 +1202,7 @@
     <div class="footer-copy">© 2025 Matsumoto Yutaro. All Rights Reserved.</div>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     // CURSOR
     const dot  = document.getElementById('cDot');
     const ring = document.getElementById('cRing');
@@ -1233,4 +1233,11 @@
     // FORM
     function handleSubmit(e) {
       e.preventDefault();
-      const btn = e.target.querySelector('.
+      const btn = e.target.querySelector('.form-submit');
+      btn.textContent = '送信完了 ✓';
+      btn.style.background = '#2563eb';
+      setTimeout(() => { btn.textContent = '送信する →'; btn.style.background = ''; }, 3000);
+    }
+  </script>
+</body>
+</html>
